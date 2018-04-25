@@ -1,0 +1,50 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ninjageeksco.samples.cap.CustomerMapActivity" >
+
+    <Button
+        android:id="@+id/customer_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/customer_settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customer_logout_btn"
+        android:layout_alignBottom="@+id/customer_logout_btn"
+        android:layout_marginEnd="37dp"
+        android:layout_toStartOf="@+id/customer_logout_btn"
+        android:background="@color/colorPrimaryDark"
+        android:text="Settings"
+        android:textStyle="bold" />
+
+    <fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+/>
+
+    <Button
+        android:id="@+id/customer_call_acar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Call a Cap"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

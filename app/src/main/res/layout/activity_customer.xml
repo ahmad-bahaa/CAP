@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.ninjageeksco.samples.cap.CustomerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:text="Customer Login"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:id="@+id/cus_text" />
+
+    <EditText
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:id="@+id/cus_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cus_text"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_screen_lock"
+        android:id="@+id/cus_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cus_email"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/cus_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cus_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorAccent"
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cus_signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cus_login"
+        android:layout_centerHorizontal="true"
+        android:text="Don't have an Account? SIGN UP Now"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorError"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cus_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cus_login"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
